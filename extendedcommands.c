@@ -421,19 +421,10 @@ int confirm_selection(const char* title, const char* confirm)
 	}
 	else {
 		char* items[] = { "No",
-						"No",
-						"No",
-						"No",
-						"No",
-						"No",
-						"No",
-						confirm, //" Yes -- wipe partition",   // [7]
-						"No",
-						"No",
-						"No",
+						confirm, //" Yes -- wipe partition",   // [1]
 						NULL };
 		int chosen_item = get_menu_selection(confirm_headers, items, 0, 0);
-		return chosen_item == 7;
+		return chosen_item == 1;
 	}
 	}
 
